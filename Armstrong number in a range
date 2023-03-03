@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int t,i,mn,mx,n,r,sum;
+    printf("mn=");
+    scanf("%d",&mn);
+    printf("mx=");
+    scanf("%d",&mx);
+    printf("Armstrong numbers are:");
+    for(n=mn;n<=mx;n++)
+    {
+        sum=0;
+        for(t=n;t!=0;t=t/10)
+        {
+            r=t%10;
+            sum=sum+r*r*r;
+        }
+        if(n==sum)
+            {printf("%d ",n);}
+    }
+}
