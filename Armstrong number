@@ -1,0 +1,17 @@
+int main()
+{
+    int num,t,r,sum=0;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    for(t=num;num!=0;num=num/10)
+    {
+        r=num%10;
+        sum=sum+r*r*r;
+
+    }
+    if(t==sum)
+    {printf("%d is a Armstrong number.",t);}
+    else printf("%d is not a Armstrong number.",t);
+
+    return 0;
+}
